@@ -1,0 +1,68 @@
+div.container-1 {
+  display: grid;
+  padding: 10px;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr) 2fr repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+}
+div.container-1 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+div.container-1 .base-color {
+  background-color: green;
+  flex-grow: 2;
+}
+div.container-1 .darken-1 {
+  background-color: #006700;
+}
+div.container-1 .darken-1 .color-box-text {
+  color: #1a1a1a;
+}
+div.container-1 .lighten-1 {
+  background-color: #009a00;
+}
+div.container-1 .lighten-1 .color-box-text {
+  color: black;
+}
+div.container-1 .darken-2 {
+  background-color: #004d00;
+}
+div.container-1 .darken-2 .color-box-text {
+  color: #333333;
+}
+div.container-1 .lighten-2 {
+  background-color: #00b300;
+}
+div.container-1 .lighten-2 .color-box-text {
+  color: black;
+}
+div.container-1 .darken-3 {
+  background-color: #003400;
+}
+div.container-1 .darken-3 .color-box-text {
+  color: #4d4d4d;
+}
+div.container-1 .lighten-3 {
+  background-color: #00cd00;
+}
+div.container-1 .lighten-3 .color-box-text {
+  color: black;
+}
+div.container-1 .darken-4 {
+  background-color: #001a00;
+}
+div.container-1 .darken-4 .color-box-text {
+  color: #666666;
+}
+div.container-1 .lighten-4 {
+  background-color: #00e600;
+}
+div.container-1 .lighten-4 .color-box-text {
+  color: black;
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
