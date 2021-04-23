@@ -1,0 +1,55 @@
+div.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0px;        
+}
+
+.Base{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;     
+}
+.Important{
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;
+}
+.Warning{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;
+}
+.Principal{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;   
+    margin: 1px;
+}
+.Secondary{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;  
+    font-weight: bold; 
+    margin: 1px;
+}
+.Box{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: -7px 10px 5px  gray;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;
+}

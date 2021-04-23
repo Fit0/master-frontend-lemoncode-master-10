@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 0px;
+    margin: 0px;
+    text-align:center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.Base{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;
+    border-radius: 4px;   
+    
+}
+.Important{
+    width: 100px;
+    height: 100px;
+    background-color:darkblue;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;
+    border-radius: 4px;
+}
+.Warning{
+    width: 100px;
+    height: 100px;
+    background-color:lightseagreen;
+    color: black;    
+    border: 1px solid black;
+    margin: 1px;
+    border-radius: 4px;
+}
+.Principal{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black; 
+    font-size: 90%;  
+    margin: 1px;
+}
+.Secondary{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;  
+    font-size: 90%; 
+    margin: 1px;
+}
+.Box{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 10px 10px 5px  gray;
+    color: black;
+    border: 1px solid black;
+    margin: 1px;
+    border-radius: 4px;
+    align-content: center;
+}
