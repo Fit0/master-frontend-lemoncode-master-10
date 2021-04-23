@@ -1,0 +1,36 @@
+div.container{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.itemMenu{    
+    display: flex;
+    margin: 3px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+  
+    background-color:rgb(4, 124, 124);
+    color: white;
+}
+
+.itemMenu div:nth-child(n){
+    padding: 20px;
+    align-self: stretch;
+    text-align: center; 
+}
+
+.itemMenu div:nth-child(n):hover{
+    background-color: rgb(4, 58, 4);
+}
+
+
+@media screen and (max-width: 600px){
+        .itemMenu{
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+        }
+}
