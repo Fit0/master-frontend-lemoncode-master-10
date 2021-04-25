@@ -1,42 +1,55 @@
 
 $colorText: black;
 $color: green;
-  
-div.container-1{
-    display: grid;
-    padding: 10px;
-    gap: 5px;
-    grid-template-columns: repeat(4 , 1fr) 2fr repeat(4 , 1fr);
-    grid-template-rows: repeat(3, 100px);
-    justify-content: center;
 
-    .box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;          
-    }  
-    
-    .base-color{
-        background-color: $color;
-        flex-grow: 2;        
+@for $row from 1 through 3{
+    @if $row == 1{
+        $colorText: black;
+        $color: green;
+    }@else if $row == 2{
+        $colorText: black;
+        $color: blue;
+    }@else{
+        $colorText: black;
+        $color: indianred;
     }
 
-    @for $col from 1 through 4{
-        .darken-#{$col}{            
-            background-color: darken($color , 5%*$col);                                      
+    div.container-#{$row}{
+        display: grid;
+        padding: 10px;
+        gap: 5px;
+        grid-template-columns: repeat(4 , 1fr) 2fr repeat(4 , 1fr);
+        grid-template-rows:  100px;
+        justify-content: center;
+
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;          
+        }  
+        
+        .base-color{
+            background-color: $color;
+            flex-grow: 2;        
         }
 
-        .darken-#{$col} .color-box-text{
-            color: lighten($colorText , 10%*$col);
-        }
+        @for $col from 1 through 4{
+            .darken-#{$col}{            
+                background-color: darken($color , 5%*$col);                                      
+            }
 
-        .lighten-#{$col}{            
-            background-color: lighten($color , 5%*$col);
-        }
-            
-        .lighten-#{$col} .color-box-text{
-            color: darken($colorText , 10%*$col);
+            .darken-#{$col} .color-box-text{
+                color: complement(lighten($color , 5%*$col)) ;
+            }
+
+            .lighten-#{$col}{            
+                background-color: lighten($color , 5%*$col);
+            }
+                
+            .lighten-#{$col} .color-box-text{
+                color: complement(darken($color , 5%*$col)) ;
+            }
         }
     }
 }
