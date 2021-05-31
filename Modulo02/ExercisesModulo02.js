@@ -140,15 +140,15 @@ class SlotMachine {
         this.monedas = 0;
     }
 
-    play(){
-        this.monedas +=1;
+    play(){    
         const slot01 = parseInt(Math.random()*2);
         const slot02 = parseInt(Math.random()*2);
         const slot03 = parseInt(Math.random()*2);
         if (slot01 === slot02 && 
-            slot02 === slot03)  
-            console.log(`Congratulations!!!. You won <${this.monedas}> coins!!`);            
-        else console.log("Good luck next time");
+            slot02 === slot03){ 
+                this.monedas +=1; 
+                console.log(`Congratulations!!!. You won <${this.monedas}> coins!!`);            
+            }else console.log("Good luck next time");
         
     }
 }
