@@ -1,0 +1,11 @@
+$background: skyblue;
+$textColor: lemonchiffon;
+
+.msg-background{
+    background-color: $background;
+    color: $textColor;
+}
+
+img {
+    max-width: 300px;
+}
