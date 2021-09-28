@@ -9,10 +9,9 @@ import { MaterialModule } from './material.module';
 
 import { MenuComponent } from './layout/menu/menu.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { HeaderComponent } from './layout/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
@@ -26,7 +25,6 @@ import { LogoutComponent } from './components/logout/logout.component';
     AppComponent,
     MenuComponent,
     FooterComponent,
-    HeaderComponent,
     HomeComponent,
     LoginComponent,
     AboutComponent,

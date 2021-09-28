@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
+//import { AboutComponent } from './components/about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
