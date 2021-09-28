@@ -1,0 +1,46 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table cellspacing="0">
+        <tr *ngIf="error">
+          <td>
+            <span class="error">{{error}}</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Email"
+                [(ngModel)]="user.name"
+                name="email"
+                required
+              />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Password"
+                [(ngModel)]="user.pwd"
+                type="password"
+                name="password"
+                required
+              />
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button type="submit" color="primary">Login</button>
+    </mat-card-actions>
+  </mat-card>
+</form>
