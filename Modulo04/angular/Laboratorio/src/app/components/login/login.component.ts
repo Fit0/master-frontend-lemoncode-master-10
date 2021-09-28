@@ -35,10 +35,10 @@ export class LoginComponent implements OnInit {
     this.user.name = _user.name;
     this.user.pwd = _user.pwd;
 
-    console.log(this.user.name);
     if (this._userAuth.login(this.user)) {
       this._router.navigate(['dashboard']);
     } else {
+      //this._userAuth.logout();
       this._router.navigate(['home']);
     }
   }

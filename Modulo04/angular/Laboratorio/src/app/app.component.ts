@@ -7,10 +7,6 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'laboratorio';
-
-  public name:string = '';
-  public token: string ='';
   public login: boolean = false;
 
   constructor(private _authservice: AuthService){

@@ -10,7 +10,7 @@ export class AuthService {
 
   login(userLogin: UserAuth): boolean {
     if (
-      userLogin.name === 'master10@lemoncode.net' &&
+      userLogin.name === 'master8@lemoncode.net' &&
       userLogin.pwd === '12345678'
     ) {
       sessionStorage.setItem('userlogin', userLogin.name);
